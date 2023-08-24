@@ -6,50 +6,50 @@
 .box {
     width: 210px; 
     height: 150px; 
-    margin: 0 auto; /* Center the boxes within their columns */
-    margin-left: 10px; /* Adjust to bring closer or farther apart. */
-    margin-right: 10px; /* Adjust to bring closer or farther apart. */
+    margin: 0 auto; /* centers my boxes in their columns */
 }
 
 .box-container {
-    min-height: 170px; /* 150px box height + 20px for potential margins or padding */
+    min-height: 170px; 
 }
 
-/* For Row 3 Color */
+/* Row 3 Color */
 .text-color {
-    color: #28a745;  /* hex color value for bg-success */
+    color: #28a745;  
 }
 
-/* For Row 5 Boldness */
+/* Row 5 Bold */
 .text-bold {
-    color: #dc3545; /*hex color value for bg-danger */
+    color: #dc3545; 
     font-weight: 800;
 }
 
-#box1 {
+.mainbox1 {
     border-style: solid;
+    border-color: #000000;
+    border-width: 3px;
 }
 
-#box2 {
+.mainbox2 {
     border-style: dashed;
     border-color: #FF69B4;
     border-width: 5px;
 }
 
-#box3 {
+.mainbox3 {
     border-style: solid;
     border-color: #FFA500;
+    border-width: 4px;
 }
 
-/* For light gray background on all buttons */
+/* background on buttons */
 .container button {
-    background-color: 	#999DA0;  /* This is a light gray color */
-    border-color: 	#999DA0;  /* Adjust the button border color to match */
+    background-color: 	#999DA0;  
 }
 
-/* Add vertical space below Row 3 */
+/* vertical space between rows */
 .vertical-space {
-    margin-bottom: 35px;  /* Adjust this value as needed */
+    margin-bottom: 35px; 
 }
 
 

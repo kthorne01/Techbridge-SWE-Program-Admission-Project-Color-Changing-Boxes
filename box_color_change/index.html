@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Manipulation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Inside the <body> tag -->
 
 <div class="container mt-5">
 
-    <!-- Row 1: Title -->
+    <!-- row 1 -->
     <div class="row">
         <div class="col text-center">
             <h3 class="underline">Week 0 Class Work</h3>
         </div>
     </div>
 
-    <!-- Row 2: Boxes -->
+    <!-- row 2 -->
     <div class="row mt-3 box-container">
         <div class="col-12">
-            <!-- Boxes -->
+            <!-- boxes -->
             <div class="row">
                 <div class="col-4 text-center">
-                    <div class="box bg-danger mx-auto" id="box1"></div>
+                    <div class="box bg-danger mx-auto mainbox1" id="box1"></div>
                 </div>
                 <div class="col-4 text-center">
-                    <div class="box bg-primary mx-auto" id="box2"></div>
+                    <div class="box bg-primary mx-auto mainbox2" id="box2"></div>
                 </div>
                 <div class="col-4 text-center">
-                    <div class="box bg-success mx-auto" id="box3"></div>
+                    <div class="box bg-success mx-auto mainbox3" id="box3"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Row 3: Change Buttons Title -->
+    <!-- row 3 -->
     <div class="row mt-3 vertical-space">
         <div class="col text-center">
             <h5 class="underline text-color">Change Buttons</h5>
@@ -48,10 +45,10 @@
     </div>
 
 
-    <!-- Row 4: Change Buttons -->
+    <!-- row 4 -->
     <div class="row mt-3 vertical-space">
         <div class="col-3 text-center">
-            <button class="btn btn-light w-100" onclick="changeColor(1)">Change Box 1</button>
+            <button class="btn btn-light w-100" onclick="changeColor(1); changeBox1Border();">Change Box 1</button>
         </div>
         <div class="col-3 text-center">
             <button class="btn btn-light w-100" onclick="changeColor(2)">Change Box 2</button>
@@ -60,20 +57,19 @@
             <button class="btn btn-light w-100" onclick="changeColor(3)">Change Box 3</button>
         </div>
         <div class="col-3 text-center">
-            <button class="btn btn-light w-100" onclick="changeAllColors()">Change All</button>
+            <button class="btn btn-light w-100" onclick="changeColor('all')">Change All</button>
         </div>
     </div>
 
 
-    <!-- Row 5: Hide Buttons Title -->
+    <!-- row 5 -->
     <div class="row mt-3 vertical-space">
         <div class="col text-center">
             <h6 class="underline text-bold">Hide Boxes</h6>
         </div>
     </div>
 
-    <!-- Row 6: Hide Buttons -->
- <!-- Row 6: Hide Buttons -->
+ <!-- row 6 -->
     <div class="row mt-3 vertical-space">
         <div class="col-3 text-center">
             <button class="btn btn-light w-100" onclick="hideBox(1)">Hide Box 1</button>
@@ -89,7 +85,7 @@
         </div>
     </div>
 
-<!-- Row 7: Reset and Show All Buttons -->
+<!-- row 7 -->
     <div class="row mt-3">
         <div class="col-3 text-center">
             <button class="btn btn-light w-100" onclick="resetColors()">Reset Colors</button>
@@ -100,6 +96,7 @@
         </div>
     </div>
 
+    <script defer src="script.js"></script>
 
 </body>
 </html>
