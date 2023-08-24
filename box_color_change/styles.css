@@ -23,7 +23,7 @@
 /* For Row 5 Boldness */
 .text-bold {
     color: #dc3545; /*hex color value for bg-danger */
-    font-weight: bold;
+    font-weight: 800;
 }
 
 #box1 {
@@ -32,11 +32,24 @@
 
 #box2 {
     border-style: dashed;
+    border-color: #FF69B4;
+    border-width: 5px;
 }
 
 #box3 {
     border-style: solid;
     border-color: #FFA500;
+}
+
+/* For light gray background on all buttons */
+.container button {
+    background-color: 	#999DA0;  /* This is a light gray color */
+    border-color: 	#999DA0;  /* Adjust the button border color to match */
+}
+
+/* Add vertical space below Row 3 */
+.vertical-space {
+    margin-bottom: 35px;  /* Adjust this value as needed */
 }
 
 
