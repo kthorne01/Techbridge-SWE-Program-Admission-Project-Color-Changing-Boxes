@@ -1,0 +1,20 @@
+
+.underline {
+    text-decoration: underline;
+}
+
+.box {
+    width: 150px; 
+    height: 150px; 
+    margin: 0 auto; /* Center the boxes within their columns */
+    margin-left: 10px; /* Adjust to bring closer or farther apart. */
+    margin-right: 10px; /* Adjust to bring closer or farther apart. */
+}
+
+.box-container {
+    min-height: 170px; /* 150px box height + 20px for potential margins or padding */
+}
+
+
+
+
